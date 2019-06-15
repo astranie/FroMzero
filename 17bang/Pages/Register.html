@@ -6,10 +6,121 @@
     <link href="/images/logo-big.ico" rel="shortcut icon" type="image/x-icon" media="screen"/>
     <title>一起帮·注册</title>
     <style>
+        .container{
+            width:1260px;
+            margin-left:auto;
+            margin-right:auto;
+            padding-left:20px;
+            padding-right:20px;
+        }
+        .page-container {
+            display:block;
+            position:relative;
+            padding-left:20px;
+            padding-right:20px;
+        }
+        .page-header{
+            padding:0;
+            border-bottom:1px solid black;
+        }
+        .settop{
+            position:fixed;
+            background-color:aliceblue;
+            right:0;
+            left:0;
+            top:0;
+            z-index:1;
+        }
+        .void-blank {
+            top:0;
+            height:60px;
+            display: block;
+        }
 
+        .new{
+            display:inline-block;
+            background-color:lightgray;
+        }
+        .content{
+            position:relative;
+        }
+        .left-content{
+            width:33%;
+            position:relative;
+          
+            margin-top:50px;
+            border:1px dotted lightblue;
+            background-color:antiquewhite;
+            padding:7px 10px;
+        }
+        .to-left-container{
+            margin-top:20px;
+            background-color:transparent;
+            border:none;
+        }
+        .pull-left{
+            float:left;
+        }
+        .pull-right{
+            float:right;
+        }
     </style>
 </head>
 <body>
+    <header class="settop">
+        <div class="container">
+            <img src="../wwwroot/images/logo-big.ico" class="pull-left" style="margin-top:10px;" />
+            <p class="pull-left" style="margin-top:20px;">
+                <span style="font-size:20px;padding-left:10px;">
+                    一起帮
+                </span>
+                <span>
+                    ·网络互助平台
+                </span>
+            </p>
+        </div>
+    </header>
 
+    <div class="container void-blank"></div>
+
+    <div class="container new">
+        <span class="pull-right">全部消息</span>
+    </div>
+
+    <div class="container page-container">
+        <div class="page-header">
+            <h1>注册</h1>
+        </div>
+        <div class="content">
+            <div class="left-content">
+                <span class="pull-right">为什么需要邀请？</span>
+                <form>
+                    <p>邀请人：（*必填，<a href="www.17bang.ren">没有邀请人</a>）</p>
+                    <input type="text" name="yaoqingren" maxlength="15"/>
+                    <p>邀请码（*必填）</p>
+                    <input type="text" name="yaoqingma" maxlength="8"/>
+                </form>
+            </div>
+            <div class="left-content to-left-container">
+                <form>
+                    <p>用户名：（*，必填）</p>
+                    <input type="text" name="yonghuming" maxlength="15"/>
+                    <p>密码：（*，必填）</p>
+                    <input type="password" name="mima" maxlength="20"/>
+                    <p>验证密码：（*，必填）</p>
+                    <input type="password" name="checkmima" maxlength="20"/>
+                    <p>验证码：（*，必填）</p>
+                    <input type="text" name="yanzhengma" maxlength="6"/>
+                </form>
+            </div>
+            
+            <form></form>
+        </div>
+
+    </div>
+
+
+
+    <footer></footer>
 </body>
 </html>

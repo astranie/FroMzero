@@ -38,23 +38,29 @@
         }
 
         .new{
-            display:inline-block;
+            
             background-color:lightgray;
         }
-        .content{
-            position:relative;
-        }
+
         .left-content{
+           
             width:33%;
-            position:relative;
-          
+            
             margin-top:50px;
+            margin-bottom:50px;
             border:1px dotted lightblue;
             background-color:antiquewhite;
+            padding:15px 10px 20px 10px;
+        }        
+        .right-content{
+            width:44%;
+            margin-top:20px;
+            margin-right:100px;
+            font-size:18px;
             padding:7px 10px;
         }
         .to-left-container{
-            margin-top:20px;
+            padding-top:30px;
             background-color:transparent;
             border:none;
         }
@@ -64,6 +70,36 @@
         .pull-right{
             float:right;
         }
+        .highlight{
+            color:blue;
+        }
+        .link-no-mark{
+            text-decoration:none;
+        }
+        .foot-mark{
+            display:inline;
+            border-right:1px solid lightblue;
+            padding-right:3px;
+        }
+        .right-header{
+            margin-top:28px;
+            padding:0;
+        }
+        #Submit{
+            padding:8px 10px;
+            margin-top:18px;
+            margin-right:10px;
+            color:white;
+            background-color:blue;
+            border:1px solid blue;
+        }
+        #Reset {
+            padding: 8px 12px;
+            margin-top: 18px;
+            background-color:gray;
+            border:1px solid gray;
+        }
+
     </style>
 </head>
 <body>
@@ -77,50 +113,93 @@
                 <span>
                     ·网络互助平台
                 </span>
-            </p>
+            </p> 
+            <div class="pull-right">
+                <ul class="right-header">
+                    <li style="display:inline;margin-right:6px;">求助</li>                                      
+                    <li style="display:inline;margin-right:6px;">文章</li>
+                    <li style="display:inline;margin-right:6px;">督促</li>
+                    <li style="display:inline;margin-right:6px;">登录</li>
+                    <li style="display:inline;margin-right:6px;">下载</li>
+                </ul>
+            </div>
         </div>
+
+       
     </header>
 
     <div class="container void-blank"></div>
 
-    <div class="container new">
-        <span class="pull-right">全部消息</span>
+    <div class="container">
+        <div style="background-color:lightgray">  
+            <div style="margin-left:1180px;">
+                全部消息
+            </div>
+        </div>
+
     </div>
 
     <div class="container page-container">
         <div class="page-header">
             <h1>注册</h1>
         </div>
-        <div class="content">
-            <div class="left-content">
-                <span class="pull-right">为什么需要邀请？</span>
-                <form>
-                    <p>邀请人：（*必填，<a href="www.17bang.ren">没有邀请人</a>）</p>
-                    <input type="text" name="yaoqingren" maxlength="15"/>
-                    <p>邀请码（*必填）</p>
-                    <input type="text" name="yaoqingma" maxlength="8"/>
-                </form>
+        <div class="left-content pull-left">
+            <a class="link-no-mark"href="whyneedyaoqing.html"><span class="pull-right">为什么需要邀请？</span></a>
+            <form>
+                <p>邀请人：（*必填，<a href="www.17bang.ren">没有邀请人</a>）</p>
+                <input type="text" name="yaoqingren" maxlength="15" style="width:100%;height:30px;" placeholder="他的用户名"/>
+                <p>邀请码（*必填）</p>
+                <input type="text" name="yaoqingma" maxlength="8" style="width:100%;height:30px;" placeholder="4位数字"/>
+            </form>
+        </div>
+        <div class="right-content" style="float:right">
+            <div>
+                <p style="font-size:30px;font:bold;">说明</p>
             </div>
-            <div class="left-content to-left-container">
-                <form>
-                    <p>用户名：（*，必填）</p>
-                    <input type="text" name="yonghuming" maxlength="15"/>
-                    <p>密码：（*，必填）</p>
-                    <input type="password" name="mima" maxlength="20"/>
-                    <p>验证密码：（*，必填）</p>
-                    <input type="password" name="checkmima" maxlength="20"/>
-                    <p>验证码：（*，必填）</p>
-                    <input type="text" name="yanzhengma" maxlength="6"/>
-                </form>
-            </div>
-            
-            <form></form>
+            <ol style="line-height:180%">
+                <li>我们希望通过<a class="link-no-mark" href="www.17bang.ren">一起帮</a>，能直接解决大家在<span class="highlight">电脑操作/软件使用/编程学习</span>等方面的具体问题。</li>
+                <li>现在互联网远程技术（比如QQ桌面共享）已经非常成熟，当我们再遇到上述问题，如果别人能<span class="highlight">直接远程给予帮助</span>，岂不是好？</li>
+                <li>当然，你也可以在你熟悉的领域去<span class="highlight">帮助别人</span>。由此而形成我们这个“你帮他他帮我我帮你，大家一起帮”的网上互助社区平台。</li>
+                <li>公平起见，我们还引入了 帮帮<span style="color:green">点</span><span style="color:yellow">/币</span><span style="color:red">/豆</span>三级概念，以记录和衡量社区成员的收获和贡献。</li>
+                <li>赶快加入我们，赚取帮帮币吧！</li>
+                <li><a class="link-no-mark" href="www.17bang.ren">了解更多!</a></li>
+            </ol>
+        </div>
+      
+
+        <div class="left-content to-left-container">
+            <form>
+                <p>用户名：（*，必填）</p>
+                <input type="text" name="yonghuming" maxlength="15" style="width:100%;height:30px;" placeholder="登录用户名，不可重复" />
+                <p>密码：（*，必填）</p>
+                <input type="password" name="mima" maxlength="20" style="width:100%;height:30px;" placeholder="不少于4个字符" />
+                <p>验证密码：（*，必填）</p>
+                <input type="password" name="checkmima" maxlength="20" style="width:100%;height:30px;" placeholder="请保持一致" />
+                <p>验证码：（*，必填）</p>
+                <input type="text" name="yanzhengma" maxlength="6" style="width:20%;height:30px;"><p style="display:inline">点击后显示</p><br />
+
+                <div style="display:block">
+                    <input type="button" name="submit" value="Submit" id="Submit" />            
+                    <input type="button" name="reset" value="Reset" id="Reset" />
+                </div>
+
+            </form>
         </div>
 
     </div>
 
-
-
-    <footer></footer>
+    <footer class="container">
+        <ul class="pull-left"style="padding:0;">
+            <li class="foot-mark"><a class="link-no-mark" href="aboutus.html">关于我们</a></li>
+            <li class="foot-mark"><a class="link-no-mark" href="problems.html">常见问题</a></li>
+            <li class="foot-mark"><a class="link-no-mark" href="advice.heml">意见建议</a></li>
+            <li class="foot-mark"><a class="link-no-mark" href="history.html">历史通知</a></li>
+            <li class="foot-mark"><a class="link-no-mark" href="money">友情捐赠</a></li>
+            <li class="foot-mark" style="border:0">融资2018</li>
+        </ul>
+        <div class="pull-right">
+            <p style="padding-right:25px;color:lightsteelblue;">重庆·首顾科技</p>
+        </div>
+    </footer>
 </body>
 </html>

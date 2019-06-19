@@ -47,10 +47,10 @@
             width:33%;
             
             margin-top:50px;
-            margin-bottom:50px;
+            margin-bottom:30px;
             border:1px dotted lightblue;
             background-color:antiquewhite;
-            padding:15px 10px 20px 10px;
+            padding:10px 10px 20px 10px;
         }        
         .right-content{
             width:44%;
@@ -99,6 +99,39 @@
             background-color:gray;
             border:1px solid gray;
         }
+        .dropdown{
+            position:relative;
+            display:inline-block;
+            margin-right:15px;
+        }
+
+        .dropcontent{
+            position:absolute;
+            display:none;
+            width:auto;
+            border:1px solid lightgray;
+            padding:0;
+            margin:0;
+            background-color:whitesmoke;
+        }
+        .dropcontent p{
+            text-decoration:none;
+            color:black;
+            border:1px solid gray;
+            padding:5px 2px;
+            margin:0;
+            
+        }
+
+        .dropdown:hover .dropcontent{
+            display:block;
+            min-width:75px;
+        }
+        .dropdown a{
+            text-decoration:none;
+            color:black;
+        }
+
 
     </style>
 </head>
@@ -116,11 +149,41 @@
             </p> 
             <div class="pull-right">
                 <ul class="right-header">
-                    <li style="display:inline;margin-right:6px;">求助</li>                                      
-                    <li style="display:inline;margin-right:6px;">文章</li>
-                    <li style="display:inline;margin-right:6px;">督促</li>
-                    <li style="display:inline;margin-right:6px;">登录</li>
-                    <li style="display:inline;margin-right:6px;">下载</li>
+                    <li class="dropdown">
+                        <a href="#">求助</a>
+                        <div class="dropcontent">
+                            <p>求助列表 </p>
+                            <p>文章列表</p>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">文章</a>
+                        <div class="dropcontent">
+                            <p href="#">文章发布</p>
+                            <p href="#">文章专栏</p>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">督促</a>
+                        <div class="dropcontent">
+                            <p href="#">督导班</p>
+                            <p href="#"> 问题求助</p>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">未登录</a>
+                        <div class="dropcontent">
+                            <p href="#">注册</p>
+                            <p href="#">登录</p>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">APP下载</a>
+                        <div class="dropcontent">
+                            <p href="#">IOS</p>
+                            <p href="#">Android</p>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -144,7 +207,7 @@
             <h1>注册</h1>
         </div>
         <div class="left-content pull-left">
-            <a class="link-no-mark"href="whyneedyaoqing.html"><span class="pull-right">为什么需要邀请？</span></a>
+            <a class="link-no-mark"href="whyneedyaoqing.html"><span class="pull-right"style="font-size:12px;">为什么需要邀请？</span></a>
             <form>
                 <p>邀请人：（*必填，<a href="www.17bang.ren">没有邀请人</a>）</p>
                 <input type="text" name="yaoqingren" maxlength="15" style="width:100%;height:30px;" placeholder="他的用户名"/>

@@ -2,137 +2,148 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="keywords" content="Register 17bang"/>
-    <link href="/images/logo-big.ico" rel="shortcut icon" type="image/x-icon" media="screen"/>
-    <title>一起帮·注册</title>
+    <meta name="keywords" content="Register 17bang" />
+    <link href="/images/logo-big.ico" rel="shortcut icon" type="image/x-icon" media="screen" />
+    <title>一起帮·登录</title>
     <style>
-        .container{
-            width:1260px;
-            margin-left:auto;
-            margin-right:auto;
-            padding-left:20px;
-            padding-right:20px;
+        .container {
+            width: 1260px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 20px;
+            padding-right: 20px;
         }
+
         .page-container {
-            display:block;
-            position:relative;
-            padding-left:20px;
-            padding-right:20px;
+            display: block;
+            position: relative;
+            padding-left: 20px;
+            padding-right: 20px;
         }
-        .page-header{
-            padding:0;
-            border-bottom:1px solid black;
+
+        .page-header {
+            padding: 0;
+            border-bottom: 1px solid black;
         }
-        .settop{
-            position:fixed;
-            background-color:aliceblue;
-            right:0;
-            left:0;
-            top:0;
-            z-index:1;
+
+        .settop {
+            position: fixed;
+            background-color: aliceblue;
+            right: 0;
+            left: 0;
+            top: 0;
+            z-index: 1;
         }
+
         .void-blank {
-            top:0;
-            height:60px;
+            top: 0;
+            height: 60px;
             display: block;
         }
 
-        .new{
-            
-            background-color:lightgray;
+        .new {
+            background-color: lightgray;
         }
 
-        .left-content{
-           
-            width:33%;
-            
-            margin-top:50px;
-            margin-bottom:30px;
-            border:1px dotted lightblue;
-            background-color:antiquewhite;
-            padding:10px 10px 20px 10px;
-        }        
-        .right-content{
-            width:44%;
-            margin-top:20px;
-            margin-right:100px;
-            font-size:18px;
-            padding:7px 10px;
+        .left-content {
+            width: 33%;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            border: 1px dotted lightblue;
+            background-color: antiquewhite;
+            padding: 10px 10px 20px 10px;
         }
-        .to-left-container{
-            padding-top:30px;
-            background-color:transparent;
-            border:none;
+
+        .right-content {
+            width: 44%;
+            margin-top: 20px;
+            margin-right: 100px;
+            font-size: 18px;
+            padding: 7px 10px;
         }
-        .pull-left{
-            float:left;
+
+        .to-left-container {
+            padding-top: 30px;
+            background-color: transparent;
+            border: none;
         }
-        .pull-right{
-            float:right;
+
+        .pull-left {
+            float: left;
         }
-        .highlight{
-            color:blue;
+
+        .pull-right {
+            float: right;
         }
-        .link-no-mark{
-            text-decoration:none;
+
+        .highlight {
+            color: blue;
         }
-        .foot-mark{
-            display:inline;
-            border-right:1px solid lightblue;
-            padding-right:3px;
+
+        .link-no-mark {
+            text-decoration: none;
         }
-        .right-header{
-            margin-top:28px;
-            padding:0;
+
+        .foot-mark {
+            display: inline;
+            border-right: 1px solid lightblue;
+            padding-right: 3px;
         }
-        #Submit{
-            padding:8px 10px;
-            margin-top:18px;
-            margin-right:10px;
-            color:white;
-            background-color:blue;
-            border:1px solid blue;
+
+        .right-header {
+            margin-top: 28px;
+            padding: 0;
         }
+
+        #Submit {
+            padding: 8px 10px;
+            margin-top: 18px;
+            margin-right: 10px;
+            color: white;
+            background-color: blue;
+            border: 1px solid blue;
+        }
+
         #Reset {
             padding: 8px 12px;
             margin-top: 18px;
-            background-color:gray;
-            border:1px solid gray;
-        }
-        .dropdown{
-            position:relative;
-            display:inline-block;
-            margin-right:15px;
+            background-color: gray;
+            border: 1px solid gray;
         }
 
-        .dropcontent{
-            position:absolute;
-            display:none;
-            width:auto;
-            border:1px solid lightgray;
-            padding:0;
-            margin:0;
-            background-color:whitesmoke;
-        }
-        .dropcontent p{
-            text-decoration:none;
-            color:black;
-            border:1px solid gray;
-            padding:5px 2px;
-            margin:0;
-            
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-right: 15px;
         }
 
-        .dropdown:hover .dropcontent{
-            display:block;
-            min-width:75px;
-        }
-        .dropdown a{
-            text-decoration:none;
-            color:black;
+        .dropcontent {
+            position: absolute;
+            display: none;
+            width: auto;
+            border: 1px solid lightgray;
+            padding: 0;
+            margin: 0;
+            background-color: whitesmoke;
         }
 
+            .dropcontent p {
+                text-decoration: none;
+                color: black;
+                border: 1px solid gray;
+                padding: 5px 2px;
+                margin: 0;
+            }
 
+        .dropdown:hover .dropcontent {
+            display: block;
+            min-width: 75px;
+        }
+
+        .dropdown a {
+            text-decoration: none;
+            color: black;
+        }
     </style>
 </head>
 <body>
@@ -146,7 +157,7 @@
                 <span>
                     ·网络互助平台
                 </span>
-            </p> 
+            </p>
             <div class="pull-right">
                 <ul class="right-header">
                     <li class="dropdown">
@@ -188,13 +199,13 @@
             </div>
         </div>
 
-       
+
     </header>
 
     <div class="container void-blank"></div>
 
     <div class="container">
-        <div style="background-color:lightgray">  
+        <div style="background-color:lightgray">
             <div style="margin-left:1180px;">
                 全部消息
             </div>
@@ -204,17 +215,9 @@
 
     <div class="container page-container">
         <div class="page-header">
-            <h1>注册</h1>
+            <h1>用户登录</h1>
         </div>
-        <div class="left-content pull-left">
-            <a class="link-no-mark"href="whyneedyaoqing.html"><span class="pull-right"style="font-size:12px;">为什么需要邀请？</span></a>
-            <form>
-                <p>邀请人：（*必填，<a href="www.17bang.ren">没有邀请人</a>）</p>
-                <input type="text" name="yaoqingren" maxlength="15" style="width:100%;height:30px;" placeholder="他的用户名"/>
-                <p>邀请码（*必填）</p>
-                <input type="text" name="yaoqingma" maxlength="8" style="width:100%;height:30px;" placeholder="4位数字"/>
-            </form>
-        </div>
+ 
         <div class="right-content" style="float:right">
             <div>
                 <p style="font-size:30px;font:bold;">说明</p>
@@ -228,7 +231,7 @@
                 <li><a class="link-no-mark" href="www.17bang.ren">了解更多!</a></li>
             </ol>
         </div>
-      
+
 
         <div class="left-content to-left-container">
             <form>
@@ -236,20 +239,17 @@
                 <input type="text" name="yonghuming" maxlength="15" style="width:100%;height:30px;" placeholder="登录用户名，不可重复" />
                 <p>密码：（*，必填）</p>
                 <input type="password" name="mima" maxlength="20" style="width:100%;height:30px;" placeholder="不少于4个字符" />
-                <p>验证密码：（*，必填）</p>
-                <input type="password" name="checkmima" maxlength="20" style="width:100%;height:30px;" placeholder="请保持一致" />
                 <p>验证码：（*，必填）</p>
-                <input type="text" name="yanzhengma" maxlength="6" style="width:20%;height:20px;">
-                <div style="display:inline;margin-left:100px;">点击后显示</div><br />
+                <input type="text" name="yanzhengma" maxlength="6" style="width:20%;height:20px;"><p style="display:inline;padding-left:20px;">点击后显示</p><br />
 
                 <div style="display:block">
-                    <input type="button" name="submit" value="Submit" id="Submit" />            
-                    <input type="button" name="reset" value="Reset" id="Reset" />
+                    <input type="button" name="submit" value="Submit" id="Submit" />
+                    <input type="radio" name="remember" value="remember"/> <span>记住我</span>
+                    <div style="display:inline;margin-left:100px;"><a href="Register.html" style="text-decoration:none">O(∩_∩)O~点击注册</a></div>
                 </div>
 
             </form>
         </div>
-
     </div>
 
     <footer class="container">

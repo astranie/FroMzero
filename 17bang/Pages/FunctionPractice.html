@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        //alert(((23 + 7) * 12 - 8) / 6)
+        //var arr = new Array("a1", "a2", "a3", "a4");
+        //console.log(arr[1]);
+        //alert(arr[2]);
+        //var student = ["s1", "s2", "s3"];
+        //alert(student[1]);
+        //for (var s of student) {
+        //    alert(s);
+        //}
+        //alert(student.length);
+        //var s = 0;
+        //for (var i = 2; i <= 100; i=i+2) {
+        //    s = s + i;
+        //}
+        //alert(s);
+        //var train = "hehe";
+        //alert(train.toUpperCase());
+       
+
+        //var s = 0;
+        //for (var i = 0; i < 100; i++) {
+        //    s = s + i;
+        //    for (var j = 0; j < s; j++) {
+        //        var s = [i];
+        //    }
+        //}
+
+
+        //for (var i = 1; i < 100; i++) {
+        //    var flag = true;
+        //    for (var j = 2; j < i; j++) {
+        //        if (i % j === 0)
+        //            flag = false;
+        //    }
+        //    if (flag)
+        //        console.log(i);
+        //}        
+
+
+        //function findMax(array) {    
+        //    newarr = array.sort();
+        //    var maxData = newarr[newarr.length - 1];
+        //    return maxData;
+        //}
+
+        function findMax(array) {
+            var maxData = undefined;
+            for (var i = 0; i < array.length; i++) {
+                if (maxData===undefined || maxData < array[i]) {
+                    maxData = array[i];
+                }
+            }
+            return maxData;
+        }
+        function findMin(array) {
+            var minData;
+            for (var i = 0; i < array.length; i++) {
+                if (minData > array[i]) {
+                    minData = array[i];
+                }
+            }
+            return minData;
+        }
+        function getUnique(array) {
+            for (var i = 0; i < array.length; i++) {
+                var a = array[i];
+                for (var j = 0; j < array.length; j++) {
+                    if (a === array[j] && i != j) {
+                        array.splice(j, 1);
+                    }
+                }
+            }
+            return array;
+        }
+
+        //var s = ["c", "a", "z", "a", "h"];
+        //alert(getUnique(s));
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
